@@ -263,6 +263,9 @@ button:focus {
 	.p_6 .sub__title, .p_5 .sub__title {
 		width: 360px;
 	}
+	.p_2 .sub__title {
+		width: 370px;
+	}
 	.p_2 .page__text {
 		width: 320px;
 		text-align: center;
@@ -310,7 +313,7 @@ button:focus {
 		line-height: 1.8rem;
 		font-size: 1.4rem;
 	}
-	.p_6 .sub__title, .p_5 .sub__title {
+	.p_6 .sub__title, .p_5 .sub__title, .p_2 .sub__title {
 		width: 310px;
 	}
 	.p_2 .page__text {
