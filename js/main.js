@@ -8,9 +8,15 @@ let iconsBtnArr = [...document.querySelectorAll('.icon__btn')];
 
 let pagesArr = [...document.querySelectorAll('.page')];
 
+
 let firstInput = document.getElementById('first__in');
 let secondInput = document.getElementById('second__in');
 let thirdInput = document.getElementById('third__in');
+
+let firstBtn = document.getElementById('first__btn');
+let secondBtn = document.getElementById('second__btn');
+let thirdBtn = document.getElementById('third__btn');
+let allowBtn = document.getElementById('allow__btn');
 
 let scrollIt = (el) => {
 	window.scrollTo({
@@ -28,6 +34,7 @@ btnBlocksArr.forEach(b_block => {
 		b_block.classList.remove('active-border');
 		btnBlocksArr.forEach(b => {b.classList.remove('active');})
 		b_block.classList.add('active');
+		scrollIt(pagesArr[1]);
 	})
 });
 
@@ -39,6 +46,7 @@ btnBlocksArr.forEach(b_block => {
 		b_block.classList.remove('active-border');
 		btnBlocksArr.forEach(b => {b.classList.remove('active');})
 		b_block.classList.add('active');
+		scrollIt(pagesArr[1]);
 	})
 });
 
@@ -66,6 +74,7 @@ iconsBtnArr.forEach(btn => {
 	});
 	btn.addEventListener('mouseup', () => {
 		btn.classList.remove('clicked');
+		scrollIt(pagesArr[4]);
 	})
 });
 iconsBtnArr.forEach(btn => {
@@ -74,10 +83,20 @@ iconsBtnArr.forEach(btn => {
 	});
 	btn.addEventListener('touchend', () => {
 		btn.classList.remove('clicked');
+		scrollIt(pagesArr[4]);
 	})
 });
 
 
+firstBtn.addEventListener('click', () => {
+	scrollIt(pagesArr[2]);
+});
+secondBtn.addEventListener('click', () => {
+	scrollIt(pagesArr[3]);
+});
+allowBtn.addEventListener('click', () => {
+	scrollIt(pagesArr[5]);
+})
 
 
 firstInput.addEventListener('focus', () => {
@@ -90,7 +109,6 @@ firstInput.addEventListener('focusout', () => {
 	firstIBB.style.height = '29.74vh';
 })
 firstInput.addEventListener('input', () => {
-	let firstBtn = document.getElementById('first__btn');
 	firstBtn.classList.add("focused");
 });
 
@@ -105,7 +123,6 @@ secondInput.addEventListener('focusout', () => {
 	secondIBB.style.height = '30.84vh';
 })
 secondInput.addEventListener('input', () => {
-	let secondBtn = document.getElementById('second__btn');
 	secondBtn.classList.add("focused");
 });
 
@@ -120,6 +137,5 @@ thirdInput.addEventListener('focusout', () => {
 	thirdIBB.style.height = '28.75vh';
 })
 thirdInput.addEventListener('input', () => {
-	let thirdBtn = document.getElementById('third__btn');
 	thirdBtn.classList.add("focused");
 });
