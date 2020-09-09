@@ -161,7 +161,6 @@ button:focus {
 }
 #second__btn {
 	margin-top: 30.84vh;
-	transition: all 0.3s ease;
 }
 
 .p_4 .title {
@@ -225,7 +224,6 @@ button:focus {
 }
 #third__btn {
 	margin-top: 28.75vh;
-	transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 500px) {
