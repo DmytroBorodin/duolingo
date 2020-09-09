@@ -39,10 +39,19 @@ button:focus {
 .page {
 	width: 100%;
 	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .border__block {
 	height: 25vh;
@@ -58,12 +67,18 @@ button:focus {
 	width: 480px;
 	margin-top: 20px;
 	padding: 25px 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	border: 4px solid #dfdddf;
 	border-bottom: 8px solid #dfdddf; 
 	border-radius: 20px;
 	cursor: pointer;
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
 	transition: all 0.1s;
 }
 .button__block.active {
@@ -108,6 +123,8 @@ button:focus {
 	text-align: center;
 }
 .inner__bb {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 #first__ibb {
@@ -159,6 +176,8 @@ button:focus {
 	text-align: center;
 	font-size: 2.6rem;
 	width: 440px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 .p_2 .main__btn {
@@ -185,8 +204,11 @@ button:focus {
 	margin-bottom: 40px;
 }
 .icons__block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 480px;
 	padding: 15px;
 }
@@ -208,7 +230,9 @@ button:focus {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .p_5 .title {
