@@ -21,6 +21,17 @@ btnBlocksArr.forEach(b_block => {
 	})
 });
 
+btnBlocksArr.forEach(b_block => {
+	b_block.addEventListener('touchstart', () => {
+		b_block.classList.add('active-border');
+	})
+	b_block.addEventListener('touchend', () => {
+		b_block.classList.remove('active-border');
+		btnBlocksArr.forEach(b => {b.classList.remove('active');})
+		b_block.classList.add('active');
+	})
+});
+
 mainBtnsArr.forEach(btn => {
 	btn.addEventListener('mousedown', () => {
 		btn.classList.add('clicked');
@@ -29,6 +40,15 @@ mainBtnsArr.forEach(btn => {
 		btn.classList.remove('clicked');
 	})
 });
+mainBtnsArr.forEach(btn => {
+	btn.addEventListener('touchstart', () => {
+		btn.classList.add('clicked');
+	});
+	btn.addEventListener('touchend', () => {
+		btn.classList.remove('clicked');
+	})
+});
+
 
 console.log(mainBtnsArr)
 
@@ -40,32 +60,39 @@ iconsBtnArr.forEach(btn => {
 		btn.classList.remove('clicked');
 	})
 });
+iconsBtnArr.forEach(btn => {
+	btn.addEventListener('touchstart', () => {
+		btn.classList.add('clicked');
+	});
+	btn.addEventListener('touchend', () => {
+		btn.classList.remove('clicked');
+	})
+});
 
-
-firstInput.addEventListener('focus', () => {
+/*firstInput.addEventListener('focus', () => {
 	let firstPageText = document.getElementById('first__pt');
 	firstPageText.style.marginTop = '15.97vh';
-})
+})*/
 firstInput.addEventListener('input', () => {
 	let firstBtn = document.getElementById('first__btn');
 	firstBtn.classList.add("focused");
 });
 
 
-secondInput.addEventListener('focus', () => {
+/*secondInput.addEventListener('focus', () => {
 	let secondBtn = document.getElementById('second__btn');
 	secondBtn.style.marginTop = '15.97vh';
-})
+})*/
 secondInput.addEventListener('input', () => {
 	let secondBtn = document.getElementById('second__btn');
 	secondBtn.classList.add("focused");
 });
 
 
-thirdInput.addEventListener('focus', () => {
+/*thirdInput.addEventListener('focus', () => {
 	let thirdBtn = document.getElementById('third__btn');
 	thirdBtn.style.marginTop = '15.97vh';
-})
+})*/
 thirdInput.addEventListener('input', () => {
 	let thirdBtn = document.getElementById('third__btn');
 	thirdBtn.classList.add("focused");
