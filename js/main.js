@@ -12,6 +12,14 @@ let firstInput = document.getElementById('first__in');
 let secondInput = document.getElementById('second__in');
 let thirdInput = document.getElementById('third__in');
 
+let scrollIt = (el) => {
+	window.scrollTo({
+		behavior: 'smooth',
+		top: el.offsetTop,
+		left: 0,
+	})
+}
+
 btnBlocksArr.forEach(b_block => {
 	b_block.addEventListener('mousedown', () => {
 		b_block.classList.add('active-border');
@@ -74,6 +82,7 @@ iconsBtnArr.forEach(btn => {
 
 firstInput.addEventListener('focus', () => {
 	let firstIBB = document.getElementById('first__ibb');
+	scrollIt(firstInput);
 	firstIBB.style.height = '13.74vh';
 })
 firstInput.addEventListener('focusout', () => {
@@ -88,6 +97,7 @@ firstInput.addEventListener('input', () => {
 
 secondInput.addEventListener('focus', () => {
 	let secondIBB = document.getElementById('second__ibb');
+	scrollIt(secondInput);
 	secondIBB.style.height = '14.84vh';
 })
 secondInput.addEventListener('focusout', () => {
@@ -102,6 +112,7 @@ secondInput.addEventListener('input', () => {
 
 thirdInput.addEventListener('focus', () => {
 	let thirdIBB = document.getElementById('third__ibb');
+	scrollIt(thirdInput);
 	thirdIBB.style.height = '12.75vh';
 })
 thirdInput.addEventListener('focusout', () => {

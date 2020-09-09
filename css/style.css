@@ -22,6 +22,7 @@
 }
 html{
 	font-size: 10px;
+	width: 100%;
 }
 body {
 	width: 100%;
@@ -208,6 +209,9 @@ button:focus {
 	transform: translate(-50%, -50%);
 }
 
+.p_5 .title {
+	margin-top: 30px;
+}
 .p_5 .sub__title {
 	margin-bottom: 10px;
 	width: 440px;
