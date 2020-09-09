@@ -1,0 +1,279 @@
+@font-face {
+	font-family: 'DIN Round Pro Medium';
+	src: url('../fonts/DINRoundPro-Medi.eot'),
+		 url('../fonts/DINRoundPro-Medi.ttf'),
+		 url('../fonts/DINRoundPro-Medi.woff2'),
+		 url('../fonts/DINRoundPro-Medi.woff');
+}
+@font-face {
+	font-family: 'DIN Round Pro Bold';
+	src: url('../fonts/DINRoundPro-Bold.eot'),
+		 url('../fonts/DINRoundPro-Bold.ttf'),
+		 url('../fonts/DINRoundPro-Bold.woff2'),
+		 url('../fonts/DINRoundPro-Bold.woff');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	box-sizing: border-box;
+	font-family: 'DIN Round Pro Medium';
+}
+html{
+	font-size: 10px;
+}
+button {
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
+.active {
+	background-color: #D5E7F5;
+}
+.page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.title {
+	font-family: 'DIN Round Pro Bold';
+	font-size: 2.8rem; 
+	color: #4e4c4e;
+	margin-bottom: 50px;
+}
+.button__block {
+	font-size: 2.6rem;
+	width: 480px;
+	margin-top: 20px;
+	padding: 25px 25px;
+	display: flex;
+	align-items: center;
+	border: 4px solid #dfdddf;
+	border-bottom: 8px solid #dfdddf; 
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+.button__block.active {
+	background-color: #D5E7F5;
+	border: 4px solid #7ECFF5;
+	border-bottom: 8px solid #7ECFF5;
+}
+.button__block.active-border {
+	border-bottom: 4px solid #dfdddf; 
+}
+.button__block .title {
+	margin-bottom: 20px;
+	color: #4e4c4e;
+}
+.button__block .sub__title {
+	color:	#b0aeb0;
+}
+.button__block.active .title, .button__block.active .sub__title {
+	color: #009AD9;
+}
+.icon__block img{
+	width: 120px;
+	margin-right: 30px;
+}
+
+.p_2 .title {
+	margin-bottom: 20px;
+}
+.sub__title {
+	line-height: 3.6rem;
+	font-size: 2.2rem;
+	color:	#b0aeb0;
+}
+.p_2 .sub__title {
+	width: 480px;
+	text-align: center;
+}
+.p_2 .page__text {
+	margin-top: 29.74vh;
+	width: 350px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+.input___block {
+	width: 440px;
+	margin-top: 5px;
+}
+.input___block input {
+	width: 100%;
+	padding: 20px 25px 20px;
+	border: 2px solid #dfdddf;
+	border-radius: 20px;
+	background-color: #f9f7f9;
+	font-size: 2.6rem; 
+	color: #4e4c4e;
+	font-family: 'DIN Round Pro Bold';
+}
+.input___block input::placeholder {
+	font-family: 'DIN Round Pro Bold';
+	font-size: 2.6rem; 
+	color: #d1cfd1;
+}
+.input___block input:focus {
+	outline: none;
+	border-radius: 20px;
+	border: 2px solid #009AD9;
+}
+.page__text {
+	color: #4e4c4e;
+	font-size: 2.2rem;
+	line-height: 2.6rem;
+}
+.underln {
+	text-decoration: underline;
+}
+.main__btn {
+	border-radius: 20px;
+	border: 2px solid #f2f0f2;
+	background-color: #f2f0f2;
+	padding: 25px;
+	color: #dfdddf;
+	text-align: center;
+	font-size: 2.6rem;
+	width: 440px;
+	transition: all 0.3s ease;
+}
+.p_2 .main__btn {
+	margin-top: 25px;
+}
+.main__btn.focused {
+	background-color: #1db1f9;
+	color: #fff;
+	border: 4px solid #1db1f9;
+	border-bottom: 8px solid #1590d1;
+}
+.main__btn.clicked {
+	border-bottom: 0px solid #1590d1;
+}
+
+.p_3 .title {
+	margin-bottom: 10px;
+}
+#second__btn {
+	margin-top: 30.84vh;
+	transition: all 0.3s ease;
+}
+
+.p_4 .title {
+	margin-bottom: 40px;
+}
+.icons__block {
+	display: flex;
+	flex-wrap: wrap;
+	width: 480px;
+	padding: 15px;
+}
+.icon__btn {
+	position: relative;
+	margin: 3.67% 1.83% 0 1.83%;
+	width: 29%;
+	padding-top: 29%;
+	border: 4px solid #dfdddf;
+	border-bottom: 8px solid #dfdddf;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.icon__btn.clicked {
+	border-bottom: 4px solid #dfdddf;
+}
+.icon__btn img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.p_5 .sub__title {
+	margin-bottom: 10px;
+	width: 440px;
+	text-align: center;
+}
+.nn__btn {
+	width: 440px;
+	background-color: transparent;
+	color: #009AD9;
+	text-align: center;
+	font-size: 2.6rem;
+	padding: 25px;
+	border-radius: 20px;
+	border: 0px;
+}
+.p_5 .nn__btn {
+	margin-top: 10px;
+}
+
+.p_6 .title {
+	margin-bottom: 10px;
+}
+.p_6 .sub__title {
+	margin-bottom: 10px;
+	width: 440px;
+	text-align: center;
+}
+.p_6 .nn__btn {
+	margin-top: 10px;
+}
+#third__btn {
+	margin-top: 28.75vh;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 500px) {
+	.title {
+	font-size: 2.4rem; 
+}
+	.button__block {
+		font-size: 2.2rem;
+		width: 360px;
+		padding: 20px 20px;
+	}
+	.icon__block img{
+		width: 110px;
+	}
+	.sub__title {
+		line-height: 2.6rem;
+		font-size: 1.8rem;
+	}
+	.p_2 .page__text {
+		width: 320px;
+		text-align: center;
+	}
+	.page__text {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+	}
+	.input___block {
+		width: 360px;
+	}
+	.input___block input {
+		padding: 15px 20px 15px;
+		font-size: 2.2rem; 
+	}
+	.input___block input::placeholder {
+		font-size: 2.2rem; 
+	}
+	.main__btn {
+		width: 360px;
+		font-size: 2.2rem;
+		padding: 20px;
+	}
+	.icons__block {
+		width: 360px;
+		padding: 10px;
+	}
+	.nn__btn {
+		width: 360px;
+		font-size: 2.2rem;
+		padding: 25px;
+	}
+}
