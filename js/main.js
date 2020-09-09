@@ -100,8 +100,7 @@ allowBtn.addEventListener('click', () => {
 
 
 firstInput.addEventListener('focus', () => {
-	let firstIBB = document.getElementById('first__ibb');
-	scrollIt(firstInput);
+	scrollIt(pagesArr[1]);
 	firstIBB.style.height = '13.74vh';
 })
 firstInput.addEventListener('focusout', () => {
@@ -114,8 +113,7 @@ firstInput.addEventListener('input', () => {
 
 
 secondInput.addEventListener('focus', () => {
-	let secondIBB = document.getElementById('second__ibb');
-	scrollIt(secondInput);
+	scrollIt(pagesArr[2]);
 	secondIBB.style.height = '14.84vh';
 })
 secondInput.addEventListener('focusout', () => {
@@ -128,8 +126,7 @@ secondInput.addEventListener('input', () => {
 
 
 thirdInput.addEventListener('focus', () => {
-	let thirdIBB = document.getElementById('third__ibb');
-	scrollIt(thirdInput);
+	scrollIt(pagesArr[5]);
 	thirdIBB.style.height = '12.75vh';
 })
 thirdInput.addEventListener('focusout', () => {
