@@ -53,6 +53,9 @@ button:focus {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
+.page.disabled {
+	display: none;
+}
 .border__block {
 	height: 25vh;
 }
